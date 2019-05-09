@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Button Page</title>
+		<style type="text/css">
+		.div { display: flex; 
+			justify-content: center;
+			margin-top: 250px; 
+		}
+
+		.top{
+			display: flex;
+			margin-left: 1200px;
+
+		}
+	.button2 {
+			transform: rotate(90deg);
+		}
+		</style>
+
+	
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	</head>
+
+	<body>
+		<div class="top">
+	    	
+	    	
+	    </div>
+		<div class="div">
+			<button class="button1"> Press Here </button>
+			<button class= "button2"> Now Here </button>
+	    </div>
+
+	    
+
+	</body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+  $(".button1").click(function(){
+	$(".top").append("<button> Press Here </button>");
+    
+  });
+  $(".button2").click(function(){
+    $(".top").append("<button> Now Here </button>");
+    e.preventDefault();
+  });
+});
+		
+	</script>
+</html>
